@@ -1,0 +1,424 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+:root{
+  --cor-primaria: #edcb9a;
+}
+
+body{
+  background-color: rgb(255, 255, 255);
+}
+
+header{
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  overflow: hidden;
+}
+
+
+header video{
+  position: absolute;
+  width: 100%;
+  object-fit: cover;
+}
+/* parte dos itens do menu no topo (header) */
+
+#container-conteudo-topo{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1.2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+ 
+}
+
+#paragrafo-topo{
+  font-size: 11px;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+
+ul#itens-de-menu{
+  display: flex;
+  gap: 3rem;
+  font-size: 12px;
+  text-transform: uppercase;
+  list-style: none;
+}
+
+
+#itens-de-menu a{
+  text-decoration: none;
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+  font-weight: bold;
+  color: white;
+  
+}
+
+ul#itens-de-menu li:hover a{
+  color: var(--cor-primaria);
+}
+
+.icones-menu-header{
+  width: 20px;
+  color: var(--cor-primaria);
+  display: none;
+}
+
+
+
+
+
+/* Retangulo de que contem o logo e as redes socias */
+
+#container-logo-redes-socias-header{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 2.3rem;
+  width: 100px;
+  height: 100vh;
+  padding:.3rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.747);
+  z-index: 1;
+}
+
+
+#logo{
+  width: 60px;
+}
+
+#paragrafo-ao-contrario{
+  display: inline;
+  transform: rotate(-90deg);
+  width: 200px;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  writing-mode:horizontal-tb ;
+  font-size: 10px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: .3rem;
+}
+
+#linha-vertical{
+  width: .5px;
+  height: 35px;
+  background-color: gray;
+}
+
+
+#container-redes-sociais{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .7rem;
+}
+
+.fa-facebook-f,
+.fa-instagram,
+.fa-linkedin-in,
+.fa-behance,
+.fa-whatsapp{
+  font-size: 18px;
+  color: gray;
+}
+
+#container-redes-socias i{
+  transition: all .2s;
+}
+
+#container-redes-socias i{
+  transform: translateX(8px)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#conteudo-header{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: flex-end;
+  color: white;
+  line-height: 1.3rem; 
+  text-align: center;
+  margin-left: 3rem;
+  z-index: 2;
+}
+
+
+
+#conteudo-header button{
+  padding: .7rem 1rem;
+  background-color: #c79754;;
+  border: none;
+  color: white;
+  font-weight: bold;
+  border-radius: 15px;
+  width: 120px;
+  transition: all .4s;
+}
+
+#conteudo-header button:hover{
+  transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Seccao Prestações */
+
+#seccao-prestacoes{
+  margin-top: 5rem;
+  margin-bottom: 8rem;
+
+}
+
+#conteudo-seccao-prestacao{
+  text-align: center;
+  line-height: 1.6rem;
+  font-weight: bold;
+  color: rgb(3, 3, 24);
+  font-size: 22px;
+  margin-bottom: 2rem;
+}
+
+#container-area-cubos{
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+
+}
+
+
+@media(max-width: 1150px){
+  #container-area-cubos{
+    flex-direction: column;
+    border: 1px solid black;
+  }
+
+  .container-cubos-prestacoes{
+    gap: 5rem;
+    justify-content: space-between;
+    border: 1px solid black;
+  }
+}
+
+#p1-conteudo-prestacao{
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.container-cubos-prestacoes{
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+
+
+.cubo-prestacao{
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 1.5rem 1rem;
+  background-color: white;
+  box-shadow: 5px 5px 27px lightgray;
+  transition: all .5s;
+}
+
+.cubo-prestacao:hover{
+  transform: scale(1.1);
+}
+
+.cubo-prestacao img{
+  width: 70px;
+}
+
+.linha-curta{
+  background-color: black;
+  width: 30px;
+  height: 1px;
+}
+
+.p1-prestacao{
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.p2-prestacao{
+  font-size: 13px;
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Secção Projectos */
+
+#container-projectos{
+  display: flex;
+  justify-content: center;
+}
+
+#p1-seccao-projectos{
+  text-transform: uppercase;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.projecto{
+  width: 25%;
+  position: relative;
+  overflow: hidden;
+}
+
+.cor-acima-da-imagem{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.521);
+  z-index: 1;
+}
+
+.projecto:hover .cor-acima-da-imagem{
+  background-color: rgba(0, 0, 0, 0.397);
+}
+
+
+.imagem-projecto{
+  width: 100%;
+  object-fit: cover;
+  transition: all .7s;
+}
+
+.projecto:hover .imagem-projecto{
+  transform: scale(1.1);
+}
+
+
+
+.p1-projecto{
+  position: absolute;
+  top: 2rem;
+  left: 1.5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: lightgray;
+  z-index: 2; 
+}
+
+.p2-projecto{
+  position:absolute;
+  left: -1.3rem;
+  bottom: 5rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  transform: rotate(-90deg);
+  letter-spacing: .2rem;
+  font-size: 13px;
+  z-index: 2;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
