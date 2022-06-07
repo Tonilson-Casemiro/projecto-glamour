@@ -43,11 +43,26 @@ header video{
  
 }
 
+
+
 #paragrafo-topo{
   font-size: 11px;
   font-weight: bold;
   cursor: pointer;
   text-transform: uppercase;
+}
+
+nav{
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+i.fa-bars,
+i.fa-xmark{
+  font-size: 23px;
+  display: none;
+  
 }
 
 
@@ -70,9 +85,7 @@ ul#itens-de-menu{
   
 }
 
-ul#itens-de-menu li:hover a{
-  color: var(--cor-primaria);
-}
+
 
 .icones-menu-header{
   width: 20px;
@@ -104,7 +117,7 @@ ul#itens-de-menu li:hover a{
 
 
 #logo{
-  width: 60px;
+  width: 40px;
 }
 
 #paragrafo-ao-contrario{
@@ -143,11 +156,12 @@ ul#itens-de-menu li:hover a{
   color: gray;
 }
 
-#container-redes-socias i{
+#container-redes-sociais i{
   transition: all .2s;
+  transform: translatex(0);
 }
 
-#container-redes-socias i{
+#container-redes-sociais i:hover{
   transform: translateX(8px)
 }
 
@@ -179,7 +193,7 @@ ul#itens-de-menu li:hover a{
   align-items: flex-end;
   color: white;
   line-height: 1.3rem; 
-  text-align: center;
+  text-align: right;
   margin-left: 3rem;
   z-index: 2;
 }
