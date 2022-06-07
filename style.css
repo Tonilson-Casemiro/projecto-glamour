@@ -1,8 +1,13 @@
+/* Importação da fonte raleway, do google fontes */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Raleway', sans-serif;
 
 }
 
@@ -11,7 +16,7 @@
 }
 
 body{
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(17, 17, 17);
 }
 
 header{
@@ -152,7 +157,7 @@ ul#itens-de-menu{
 .fa-linkedin-in,
 .fa-behance,
 .fa-whatsapp{
-  font-size: 18px;
+  font-size: 14px;
   color: gray;
 }
 
@@ -202,7 +207,7 @@ ul#itens-de-menu{
 
 #conteudo-header button{
   padding: .7rem 1rem;
-  background-color: #c79754;;
+  background-color: black;
   border: none;
   color: white;
   font-weight: bold;
@@ -290,7 +295,6 @@ ul#itens-de-menu{
   gap: 2rem;
   padding: 1.5rem 1rem;
   background-color: white;
-  box-shadow: 5px 5px 27px lightgray;
   transition: all .5s;
 }
 
