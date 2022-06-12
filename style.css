@@ -6,9 +6,14 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
   font-family: 'Raleway', sans-serif;
+<<<<<<< HEAD
   letter-spacing: .2rem;
+=======
+  font-family: Arial, Helvetica, sans-serif;
+  
+
+>>>>>>> 59e1636324421a2d52c5d1c29e7538aa0ae6441a
 }
 
 :root{
@@ -16,13 +21,16 @@
 }
 
 body{
+<<<<<<< HEAD
 
   background: rgb(24, 23, 23) url(imagens/FUNDO.png) 100%;
+=======
+  background: rgb(24, 23, 23) url(imagens/FUNDO.png) 100% ;
+>>>>>>> 59e1636324421a2d52c5d1c29e7538aa0ae6441a
 }
 
 header{
   position: relative;
-  width: 100vw;
   height: 100vh;
   color: white;
   overflow: hidden;
@@ -34,40 +42,49 @@ header video{
   width: 100%;
   object-fit: cover;
 }
-/* parte dos itens do menu no topo (header) */
+/*  */
 
-#container-conteudo-topo{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 1.2rem;
+#container-logo-topo-icones{
   position: absolute;
   top: 0;
-  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.2rem;
   width: 100%;
   z-index: 1;
  
 }
 
-
-
-#paragrafo-topo{
-  font-size: 11px;
-  font-weight: bold;
-  cursor: pointer;
-  text-transform: uppercase;
+#container-logo-topo-icones img{
+  margin-left: 1rem;
 }
 
+
+#conteudo-header{
+  text-align: center;
+}
+
+
 nav{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.637);
   display: flex;
   gap: 2rem;
+  justify-content: center;
   align-items: center;
+  width: 100vw;
+  padding: 1.8rem;
+  z-index: 1;
+  margin-top: .3rem;
 }
 
 i.fa-bars,
 i.fa-xmark{
   font-size: 23px;
-  display: none;
+  visibility: hidden;
   
 }
 
@@ -90,9 +107,51 @@ ul#itens-de-menu{
   color: white;
   letter-spacing: .2rem;
   font-size: 10px;
+  position: relative;
   
 }
 
+#itens-de-menu a:hover:after{
+  content: '';
+  background-color: white;
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  top: 1.3rem;
+  transition: all .2s;
+}
+
+nav.show{
+  width: 100vw;
+  height: 100vh;
+  background-color: white;
+  z-index: 999;
+  overflow: hidden;
+}
+
+nav.show ul#itens-de-menu{
+  
+  flex-direction: column;
+  align-items: center;
+  z-index: 999;
+ 
+}
+
+nav.show ul#itens-de-menu a{
+  color: black;
+}
+
+nav.show i.fa-xmark{
+  display: block;
+  z-index: 999;
+  color: black;
+  position: absolute;
+}
+
+nav.show ul#itens-de-menu a::after{
+  height: 1px;
+  background-color: black;
+}
 
 
 .icones-menu-header{
@@ -103,28 +162,31 @@ ul#itens-de-menu{
 
 
 
+@media (max-width: 700px){
+  i.fa-bars{
+  font-size: 23px;
+  visibility: visible;
+  
+  }
 
-
-/* Retangulo de que contem o logo e as redes socias */
-
-#container-logo-redes-socias-header{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  gap: 2.3rem;
-  width: 100vh;
-  padding:.3rem;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.747);
-  z-index: 1;
 }
 
 
-#logo{
-  width: 40px;
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Retangulo de que contem o logo e as redes socias 
 
 #paragrafo-ao-contrario{
   display: inline;
@@ -139,17 +201,18 @@ ul#itens-de-menu{
   letter-spacing: .3rem;
 }
 
-#linha-vertical{
-  width: .5px;
-  height: 35px;
-  background-color: gray;
-}
 
 
 #container-redes-sociais{
+  position: absolute;
+  bottom: 4rem;
+  right: 0;
   display: flex;
   align-items: center;
   gap: .7rem;
+  justify-content: flex-end;
+  z-index: 1;
+  margin-right: 1rem;
 }
 
 .fa-facebook-f,
@@ -163,17 +226,14 @@ ul#itens-de-menu{
 
 #container-redes-sociais i{
   transition: all .2s;
-  transform: translatex(0);
+  transform: translatey(0);
 }
 
 #container-redes-sociais i:hover{
-  transform: translateX(8px)
+  transform: translatey(-8px)
 }
 
-
-
-
-
+*/
 
 
 
@@ -197,14 +257,14 @@ ul#itens-de-menu{
   gap: 2rem;
   align-items: flex-end;
   color: white;
-  line-height: 1.3rem; 
-  text-align: right;
+  text-align: center;
   margin-left: 3rem;
   z-index: 2;
 }
 
 
 
+<<<<<<< HEAD
 #conteudo-header button{
   padding: .7rem 1rem;
   background-color: black;
@@ -219,6 +279,8 @@ ul#itens-de-menu{
 #conteudo-header button:hover{
   transform: scale(1.1);
 }
+=======
+>>>>>>> 59e1636324421a2d52c5d1c29e7538aa0ae6441a
 
 
 
@@ -233,11 +295,7 @@ ul#itens-de-menu{
 
 
 
-
-
-
-
-/* Seccao Prestações */
+/* Seccao Prestações 
 
 #seccao-prestacoes{
   margin-top: 5rem;
@@ -261,66 +319,7 @@ ul#itens-de-menu{
 
 }
 
-
-@media(max-width: 1150px){
-  #container-area-cubos{
-    flex-direction: column;
-    border: 1px solid black;
-  }
-
-  .container-cubos-prestacoes{
-    gap: 5rem;
-    justify-content: space-between;
-    border: 1px solid black;
-  }
-}
-
-#p1-conteudo-prestacao{
-  font-size: 14px;
-  text-transform: uppercase;
-  font-weight: normal;
-}
-
-.container-cubos-prestacoes{
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
-}
-
-
-.cubo-prestacao{
-  max-width: 250px;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  padding: 1.5rem 1rem;
-  background-color: white;
-  transition: all .5s;
-}
-
-.cubo-prestacao:hover{
-  transform: scale(1.1);
-}
-
-.cubo-prestacao img{
-  width: 70px;
-}
-
-.linha-curta{
-  background-color: black;
-  width: 30px;
-  height: 1px;
-}
-
-.p1-prestacao{
-  font-size: 18px;
-  font-weight: bold;
-}
-
-.p2-prestacao{
-  font-size: 13px;
-  font-weight: bold;
-}
+*/
 
 
 
@@ -353,7 +352,8 @@ ul#itens-de-menu{
   font-size: 22px;
   font-weight: bold;
   text-align: center;
-  margin-bottom: 2rem;
+  margin: 2rem 0;
+  color: white;
 }
 
 .projecto{
