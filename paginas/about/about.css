@@ -1,0 +1,185 @@
+/* Importação da fonte raleway, do google fontes */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: .2rem;
+}
+
+
+#about{
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.maiuscula{
+  text-transform: uppercase;
+  text-indent: 3px;
+  margin-bottom: .8rem;
+}
+
+/* Visão */
+
+.container-conteudo-visao{
+ 
+  display: flex;
+  gap: 2rem;
+  margin: auto;
+  justify-content: center;
+  padding: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 8rem;
+}
+
+.conteudo-about{
+  margin-top: 2rem;
+  font-weight: bold;
+}
+
+.paragrafo-about{
+  max-width: 450px;
+  text-align: justify;
+}
+
+.imagem-about{
+  width: 400px;
+  height: 500px;
+}
+
+@media(max-width:962px){
+  .container-conteudo-visao{
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    font-size: 13px;
+  }
+}
+
+
+/* Missão */
+
+.container-conteudo-missao{
+  display: flex;
+  gap: 4rem;
+  margin: auto;
+  justify-content: center;
+  padding: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 8rem;
+}
+
+@media(max-width:962px){
+  .container-conteudo-missao{
+    align-items: center;
+    text-align: center;
+    font-size: 13px;
+  }
+}
+
+
+/* Valores */
+
+.container-conteudo-valores{
+  display: flex;
+  gap: 4rem;
+  margin: auto;
+  justify-content: center;
+  padding: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 8rem;
+}
+
+
+@media(max-width:962px){
+  .container-conteudo-valores{
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    font-size: 13px;
+  }
+
+  
+}
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+footer{
+  padding: 5rem .5rem;
+  background-color: #010e1f;
+  color: white;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-around;
+
+}
+
+footer p{
+  font-size: 13px;
+  margin-bottom: .5rem;
+}
+
+footer #footer-produtos{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+footer #footer-servicos-suporte{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+footer i{
+  color: white;
+  transition: all .2s;
+  text-decoration: none;
+}
+
+footer i:hover{
+  transform: translatey(-4px);
+}
+
+#footer-redes-sociais{
+  display: flex;
+  gap: 1rem;
+}
+
+@media(max-width:1000px){
+  footer p{
+    font-size: 10px;
+  }
+}
+
+@media(max-width:800px){
+  #footer-redes-sociais{
+    gap: .3rem;
+    flex-direction: column;
+  }
+}
+
+@media(max-width:700px){
+  footer{
+    gap: 2rem;
+    text-align: center;
+    font-size: 11px;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+
+
