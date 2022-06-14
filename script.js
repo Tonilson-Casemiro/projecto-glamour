@@ -11,6 +11,16 @@ iconeCloseMenu.addEventListener('click', function(){
     nav.classList.remove('show')
 })
 
+
+
+
+// Sobre os modais de cada projecto
+
+
+
+
+// Scroll Reveal
+
 window.sr = ScrollReveal({reset: true})
 
 sr.reveal('.logotipo',{
@@ -19,7 +29,7 @@ sr.reveal('.logotipo',{
 })
 
 sr.reveal('.conteudos-topo',{
-    rotate: {x:0, y:80, z:0},
+    rotate: {x:0, y:10, z:0},
     duration: 2500
 })
 
