@@ -7,8 +7,12 @@
   <title>Glamour - Marketing e Comunicação Visual</title>
   <link rel="shortcut icon" href="imagens/icone/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="style.css">
+
   <script src="https://unpkg.com/scrollreveal"></script>
- 
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+  />
 
 </head>
 <body>
@@ -239,48 +243,43 @@
         <!--(container que engloba 2 projectos)-->
         <div class="container-projectos">
           <!--projecto1-->
-          <a href="#" target="_self" rel="next" class="projecto">
-            <div>
-              <div class="cor-acima-da-imagem"></div>
-              <p class="p1-projecto">nosso primeiro <br> projecto 2022</p>
-              <img src="imagens/projectos/pexels-photo-3184297.webp" alt="" class="imagem-projecto">
-              <p class="p2-projecto">hotel fleuma</p>
-            </div>
-          </a> 
-          <!--projecto2-->
-          <a href="#" target="_self" rel="next" class="projecto">
-            <div>
-              <div class="cor-acima-da-imagem"></div>
-              <p class="p1-projecto">nosso primeiro <br> projecto 2022</p>
-              <img src="imagens/projectos/pexels-photo-7504871.jpeg" alt="" class="imagem-projecto">
-              <p class="p2-projecto">ncr angola</p>
-            </div>
-          </a>
-
+          <div  class="projecto">
+            <div class="cor-acima-da-imagem"></div>
+            <p class="p1-projecto">nosso primeiro <br> projecto 2022</p>
+            <img src="imagens/projectos/pexels-photo-3184297.webp" alt="" class="imagem-projecto">
+            <p class="p2-projecto">hotel fleuma</p>
           </div>
+          
+          <!--projecto2-->
+          <div class="projecto">
+            <div class="cor-acima-da-imagem"></div>
+            <p class="p1-projecto">nosso primeiro <br> projecto 2022</p>
+            <img src="imagens/projectos/pexels-photo-7504871.jpeg" alt="" class="imagem-projecto">
+            <p class="p2-projecto">ncr angola</p>
+          </div>
+          
+
+        </div>
 
           <!--(container que engloba 2 projectos)-->
-          <div class="container-projectos">
+        <div class="container-projectos">
             <!--projecto3-->
-            <a href="#" target="_self" rel="next" class="projecto">
-              <div>
-                <div class="cor-acima-da-imagem"></div>
-                <p class="p1-projecto">nosso primeiro <br> projecto 2022</p>
-                <img src="imagens/projectos/pexels-photo-7689858.webp" alt="" class="imagem-projecto">
-                <p class="p2-projecto">nosso super</p>
-              </div>
-            </a>
-          <!--projecto4-->
-            <a href="#" target="_self" rel="next" class="projecto">
-              <div>
+            <div class="projecto">
+              <div class="cor-acima-da-imagem"></div>
+              <p class="p1-projecto">nosso primeiro <br> projecto 2022</p>
+              <img src="imagens/projectos/pexels-photo-7689858.webp" alt="" class="imagem-projecto">
+              <p class="p2-projecto">nosso super</p>
+            </div>
+            
+            <!--projecto4-->
+              <div class="projecto">
                 <div class="cor-acima-da-imagem"></div>
                 <p class="p1-projecto">nosso primeiro <br> projecto 2022</p>
                 <img src="imagens/projectos/pexels-photo-8866751.jpeg" alt="" class="imagem-projecto">
                 <p class="p2-projecto">gusmapis</p>
               </div>
-            </a>
 
-          </div>
+        </div>
       </div>
 
       
@@ -290,15 +289,20 @@
 
 
     
-    <section class="seccao-sobre-o-projecto">
+    <section class="seccao-modais-projecto">
 
-      <!-- Sobre o projecto 1 -->
-      <div class="modal">
+      <!-- Modal do projecto 1 -->
+      <div class="modaisProjecto">
+        <i class="fa-solid fa-xmark"></i>
+        <!--
+        <i class="fa-solid fa-angle-left"></i>
+        <i class="fa-solid fa-angle-right"></i>
+        -->
         <div class="sobre-cliente">
           <img src="imagens/projectos/pexels-photo-3184297.webp" alt="Imagem da empresa do cliente" class="imagem-empresa-cliente">
           <p class="nome-empresa-cliente">Bless Home</hp>
         </div>
-        <i class="fa-solid fa-xmark"></i>
+        
         <div class="container-fotos-projectos">
 
           <p class="servico-prestado-para-cliente">Impressão de Lonas</p>
@@ -315,12 +319,98 @@
         </div>
       </div>
 
+      <!-- Modal do projecto 2 -->
+      <div class="modaisProjecto">
+        <i class="fa-solid fa-xmark"></i>
+        <!--
+        <i class="fa-solid fa-angle-left"></i>
+        <i class="fa-solid fa-angle-right"></i>
+        -->
+        <div class="sobre-cliente">
+          <img src="imagens/projectos/pexels-photo-3184297.webp" alt="Imagem da empresa do cliente" class="imagem-empresa-cliente">
+          <p class="nome-empresa-cliente">Bless Home</hp>
+        </div>
+        
+        <div class="container-fotos-projectos">
+
+          <p class="servico-prestado-para-cliente">Impressão de Lonas</p>
+
+          <div class="container-imgs-projecto">
+            <img src="imagens/projectos/pexels-photo-3184297.webp" alt="imagem-do-projecto" class="imagens-projecto-cliente">
+          </div>
+
+          <div class="container-imgs-projecto">
+            <img src="imagens/projectos/pexels-photo-7689858.webp" alt="imagem-do-projecto" class="imagens-projecto-cliente">
+          </div>
+          
+
+        </div>
+      </div>
+
+      <!-- Modal do projecto 3 -->
+      <div class="modaisProjecto">
+        <i class="fa-solid fa-xmark"></i>
+        <!--
+        <i class="fa-solid fa-angle-left"></i>
+        <i class="fa-solid fa-angle-right"></i>
+        -->
+        <div class="sobre-cliente">
+          <img src="imagens/projectos/pexels-photo-3184297.webp" alt="Imagem da empresa do cliente" class="imagem-empresa-cliente">
+          <p class="nome-empresa-cliente">Bless Home</hp>
+        </div>
+        
+        <div class="container-fotos-projectos">
+
+          <p class="servico-prestado-para-cliente">Impressão de Lonas</p>
+
+          <div class="container-imgs-projecto">
+            <img src="imagens/projectos/pexels-photo-3184297.webp" alt="imagem-do-projecto" class="imagens-projecto-cliente">
+          </div>
+
+          <div class="container-imgs-projecto">
+            <img src="imagens/projectos/pexels-photo-7689858.webp" alt="imagem-do-projecto" class="imagens-projecto-cliente">
+          </div>
+          
+
+        </div>
+      </div>
+
+      <!-- Modal do projecto 4 -->
+      <div class="modaisProjecto">
+        <i class="fa-solid fa-xmark"></i>
+        <!--
+        <i class="fa-solid fa-angle-left"></i>
+        <i class="fa-solid fa-angle-right"></i>
+        -->
+        <div class="sobre-cliente">
+          <img src="imagens/projectos/pexels-photo-3184297.webp" alt="Imagem da empresa do cliente" class="imagem-empresa-cliente">
+          <p class="nome-empresa-cliente">Bless Home</hp>
+        </div>
+        
+        <div class="container-fotos-projectos">
+
+          <p class="servico-prestado-para-cliente">Impressão de Lonas</p>
+
+          <div class="container-imgs-projecto">
+            <img src="imagens/projectos/pexels-photo-3184297.webp" alt="imagem-do-projecto" class="imagens-projecto-cliente">
+          </div>
+
+          <div class="container-imgs-projecto">
+            <img src="imagens/projectos/pexels-photo-7689858.webp" alt="imagem-do-projecto" class="imagens-projecto-cliente">
+          </div>
+          
+
+        </div>
+      </div>
+      
 
 
     </section>
 
   </main>
 
+  <div class="linha-colorida-footer">
+  </div>
   <footer>
 
     <div id="footer-produtos">
@@ -390,6 +480,7 @@
 
   <script src="script.js"></script>
   <script src="https://kit.fontawesome.com/0321c5e24c.js" crossorigin="anonymous"></script>
+
 
 </body>
 </html>

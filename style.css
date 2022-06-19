@@ -1,12 +1,12 @@
 /* Importação da fonte raleway, do google fontes */
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&family=Raleway:wght@100&display=swap');
 
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Raleway', sans-serif;
   letter-spacing: .2rem;
 }
 
@@ -15,7 +15,8 @@
 }
 
 body{
-  background: black url(imagens/Banner00.jpg) center 100% ;
+  background: black url(imagens/Banner00.jpg);
+  
 }
 
   
@@ -27,6 +28,7 @@ header{
   height: 100vh;
   color: white;
   overflow: hidden;
+  font-family: 'Raleway', sans-serif;
 }
 
 
@@ -90,14 +92,15 @@ nav{
   margin-top: .3rem;
 }
 
-@media (max-width: 1025px){
+@media (max-width: 600px){
   nav{
     visibility: hidden;
-    
+  }
+  nav.menu{
+    font-size: 11px;
   }
 
 }
-
 
 
 
@@ -109,7 +112,7 @@ i.fa-bars{
   
 }
 
-@media (max-width: 1025px){
+@media (max-width: 600px){
   i.fa-bars{
     visibility: visible;
   }
@@ -148,6 +151,27 @@ ul#itens-de-menu{
   transition: all .2s;
 }
 
+
+nav i.fa-xmark{
+  visibility: hidden;
+}
+
+nav.show{
+  animation: animacaoMenuMobile ease-in-out;
+  animation-duration: .4s;
+}
+
+
+@keyframes animacaoMenuMobile {
+  from{
+    transform: scale(0);
+  }
+  to{
+    transform: scale(1);
+  }
+}
+
+
 nav.show{
  
   visibility: visible;
@@ -156,7 +180,7 @@ nav.show{
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: white;
+  background-color: black;
   z-index: 999;
   overflow: hidden;
   margin: 0;
@@ -181,18 +205,29 @@ nav.show ul#itens-de-menu{
 
 nav.show ul#itens-de-menu a{
   color: black;
+  
+}
+
+nav.show ul#itens-de-menu a span{
+  color: white;
+  font-weight: bold;
+  font-size: 11px;
 }
 
 nav.show i.fa-xmark{
   display: block;
   z-index: 999;
-  color: black;
+  color: white;
   position: absolute;
 }
 
 nav.show ul#itens-de-menu a::after{
   height: 1px;
-  background-color: black;
+  background-color: gray;
+}
+
+nav.show i{
+  color: white;
 }
 
 
@@ -203,8 +238,9 @@ nav.show ul#itens-de-menu a::after{
 }
 
 
+ 
 
-@media (max-width: 700px){
+@media (max-width: 600px){
   i.fa-bars{
   font-size: 23px;
   visibility: visible;
@@ -212,6 +248,7 @@ nav.show ul#itens-de-menu a::after{
   }
 
 }
+
 
 
 
@@ -303,7 +340,9 @@ nav.show ul#itens-de-menu a::after{
 
 
 
-
+main{
+  font-family: 'Raleway', sans-serif;
+}
 
 #seccao-servicos{
   margin-top: 5rem;
@@ -411,11 +450,15 @@ nav.show ul#itens-de-menu a::after{
 
 
 /* Secção Projectos */
+#seccao-projectos{
+  margin-bottom: 3rem;
+}
+
 
 .container-projectos{
   display: flex;
   justify-content: center;
-  margin-bottom: 3rem;
+  
 
 }
 
@@ -423,9 +466,8 @@ nav.show ul#itens-de-menu a::after{
   display: flex;
 }
 
-.container-projectos{
-  
-}
+
+
 
 #p1-seccao-projectos{
   text-transform: uppercase;
@@ -440,6 +482,7 @@ nav.show ul#itens-de-menu a::after{
   width: 50%;
   position: relative;
   overflow: hidden;
+
 }
 
 .cor-acima-da-imagem{
@@ -519,19 +562,60 @@ nav.show ul#itens-de-menu a::after{
 
 
 
-  /* Sobre os modais dos projectos */
-  .modal html, body{
 
+
+
+
+  /* Sobre os modais dos projectos */
+  .scrollHidden{
+    overflow: hidden;
   }
-  .modal{
+
+  .modaisProjecto .fa-angle-left,
+  .fa-angle-right{
+    position: fixed;
+    bottom: 8%;
+    color: white;
+    font-size: 20px;
+    background-color: gray;
+    border-radius: 50%;
+    padding: .5rem .9rem;
+  }
+
+  .fa-angle-left{
+    left: 1%;
+  }
+
+  .fa-angle-right{
+    right: 2%;
+  }
+
+
+  .modaisProjecto{
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0,0,0,0.7);
     z-index: 999;
     display: none;
+    overflow-y: scroll;
+    transition: all .1s;
+  }
+
+  .animacaoModal{
+    animation: animacaoAparecerModal  ease-in-out ;
+    animation-duration: .6s;
+  }
+
+  @keyframes animacaoAparecerModal {
+    from{
+      transform: scale(0);
+    }
+    to{
+      transform: scale(1);
+    }
   }
 
   .sobre-cliente{
@@ -559,15 +643,16 @@ nav.show ul#itens-de-menu a::after{
   .servico-prestado-para-cliente{
     text-align: center;
     font-weight: bold;
+    margin-bottom: 2rem;
   }
 
-  .modal i.fa-xmark{
+  .modaisProjecto i.fa-xmark{
     color: white;
-    position: absolute;
+    position: fixed;
     top: 1rem;
-    right: 1rem;
+    right: 2rem;
     font-size: 20px;
-   
+    
   }
 
 
@@ -575,20 +660,21 @@ nav.show ul#itens-de-menu a::after{
 
   .container-fotos-projectos{
     width: 90%;
-    height: 100%;
+    height: auto;
     padding: 2rem 0;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: .3rem;
     background-color: white;
     margin: auto;
     margin-top: 2rem;
-    overflow-y: scroll;
+    margin-bottom: 6rem;
 
   }
 
   .container-imgs-projecto{
-    width: 90%;
+    width: 99%;
+    height: 450px;
     margin: auto;
   }
 
@@ -616,7 +702,11 @@ nav.show ul#itens-de-menu a::after{
 
 
 
-
+  .linha-colorida-footer{
+    width: 100%;
+    height: 2px;
+    background-image:linear-gradient(to right, blue,red,orange,yellow);
+  }
 
   /* Footer */
   footer{
@@ -626,12 +716,17 @@ nav.show ul#itens-de-menu a::after{
     font-weight: bold;
     display: flex;
     justify-content: space-around;
-
+    font-family: 'Poppins', sans-serif;
+    
   }
 
   footer p{
     font-size: 13px;
     margin-bottom: .5rem;
+  }
+  
+  footer a{
+    text-decoration: none;
   }
 
   footer #footer-produtos{
@@ -660,6 +755,7 @@ nav.show ul#itens-de-menu a::after{
   footer i:hover{
     transform: translatey(-4px);
   }
+
 
   #footer-redes-sociais{
     display: flex;
