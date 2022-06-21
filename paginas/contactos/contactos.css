@@ -15,6 +15,7 @@ header{
   height: 24rem;
   position: relative;
   margin-bottom: 3rem;
+  font-family: 'Raleway', sans-serif;
 }
 
 #conteudo-centro-header{
@@ -43,7 +44,9 @@ header{
 
 
 /* Main*/
-
+main{
+  font-family: 'Raleway', sans-serif;
+}
 
 /* Seccao 1 ( dos icones) */
 #seccao1{
@@ -135,6 +138,14 @@ header{
   height: 25rem;
   position: relative;
   margin-bottom: 10rem;
+}
+
+
+#mapa{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  
 }
 
 #containers-contactos{
