@@ -644,7 +644,7 @@ main{
   .servico-prestado-para-cliente{
     text-align: center;
     font-weight: bold;
-    margin-bottom: 2rem;
+    margin-bottom: .4rem;
   }
 
   .modaisProjecto i.fa-xmark{
@@ -665,7 +665,7 @@ main{
     padding: 2rem 0;
     display: flex;
     flex-direction: column;
-    gap: .3rem;
+    gap: 2rem;
     background-color: white;
     margin: auto;
     margin-top: 2rem;
@@ -674,9 +674,14 @@ main{
   }
 
   .container-imgs-projecto{
-    width: 99%;
-    height: 450px;
+    width: 90%;
+    height: 550px;
     margin: auto;
+  }
+
+  .img-logo-cliente{
+    margin: auto;
+    width: 40%;
   }
 
   .imagens-projecto-cliente{

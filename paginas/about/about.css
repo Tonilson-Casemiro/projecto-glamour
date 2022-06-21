@@ -31,12 +31,6 @@ main{
   
 }
 
-@media(max-width: 1000px){
-  #about{
-    text-align: center;
-  }
-}
-
 
 #about h1{
   font-size: 3rem;
@@ -51,6 +45,24 @@ main{
 }
 
 
+@media(max-width: 1100px){
+  #about{
+    text-align: center;
+    
+  }
+  #about p{
+    text-align: center;
+  }
+}
+
+@media(max-width: 900px){
+  #about h1{
+    font-size: 1.8rem;
+  }
+  #about p{
+    font-size: 1rem;
+  }
+}
 
 
 
@@ -71,7 +83,7 @@ main{
   margin: auto;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
+  padding: 2rem;
   margin-bottom: 8rem;
 }
 
@@ -87,41 +99,86 @@ main{
   height: 350px;
 }
 
-@media(max-width:962px){
+@media(max-width:1000px){
   .container-conteudo-visao{
     flex-direction: column-reverse;
     align-items: center;
     text-align: center;
     font-size: 13px;
   }
+
+
+  .container-conteudo-visao h1{
+    font-size: 22px;
+  }
 }
+
+@media(max-width: 800px){
+
+  .container-conteudo-visao{
+    padding: 1rem;
+  }
+  
+  .imagem-about{
+    width: 95%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Missão */
 
 .container-conteudo-missao{
   display: flex;
-  gap: 4rem;
-  margin: auto;
+  gap: 2rem;
   justify-content: center;
-  padding: 1rem;
+  padding: 2rem;
   align-items: center;
   margin-bottom: 8rem;
+  
 }
 
-.container-conteudo-missao .paragrafo-about{
-  text-align: left;
-};
 
 
 
-@media(max-width:962px){
+
+@media(max-width:1000px){
+
+  .container-conteudo-missao{
+    flex-direction: column;
+    align-items: center;
+  }
+
   .container-conteudo-missao{
     align-items: center;
     text-align: center;
     font-size: 13px;
   }
 }
+
+
 
 
 /* Valores */
@@ -132,7 +189,6 @@ main{
   margin: auto;
   justify-content: center;
   padding: 1rem;
-  flex-wrap: wrap;
   margin-bottom: 8rem;
 }
 

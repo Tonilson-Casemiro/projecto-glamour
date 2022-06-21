@@ -48,6 +48,8 @@ closeModal[0].addEventListener('click', function(){
     body.classList.remove('scrollHidden')
 })
 
+
+
 projectos[0].addEventListener('click', function(){
     modaisProjecto[0].style.display = 'block'
     modaisProjecto[0].classList.add('animacaoModal')
