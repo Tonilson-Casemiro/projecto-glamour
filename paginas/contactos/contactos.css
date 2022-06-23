@@ -151,6 +151,8 @@ main{
   
 }
 
+
+
 #containers-contactos{
   width: 420px;
   background-color: white;
@@ -158,6 +160,7 @@ main{
   position: absolute;
   top: 30%;
   right: 4rem;
+ 
 }
 
 @media(max-width: 550px){
